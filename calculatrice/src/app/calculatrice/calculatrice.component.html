@@ -1,0 +1,14 @@
+<button (click)="generateFirstNumber()">Générer le 1er nombre</button>
+<button (click)="generateSecondNumber()">Générer le 2ème nombre</button>
+<div>
+  Nombre 1 : {{ nb1 }}
+  Nombre 2 : {{ nb2 }}
+</div>
+<button (click)="add()"> + </button>
+<button (click)="substract()"> - </button>
+<button (click)="multiply()"> * </button>
+<button (click)="divide()"> / </button>
+
+<div *ngIf="result">
+  Résultat: {{ result }}
+</div>
