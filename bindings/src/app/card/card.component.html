@@ -1,0 +1,7 @@
+<div class="card">
+  <img [src]="user.imgUrl" (click)="printQuote()"/>
+  <h2>{{ user.name }}</h2>
+  <p> Age : {{ user.age }}ans </p>
+  <input [(ngModel)]="user.quote"/>
+  {{ user.quote }}
+</div>
