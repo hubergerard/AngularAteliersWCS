@@ -1,0 +1,30 @@
+<div>
+  <h3>Produits en promo</h3>
+  <ul>
+    <ng-container *ngFor="let product of products">
+      <li *ngIf="product.promo">
+        {{ product.name }}
+      </li>
+    </ng-container>
+  </ul>
+</div>
+<div>
+  <h3>Produits sans prix</h3>
+  <ul>
+    <ng-container *ngFor="let product of products">
+      <li *ngIf="!product.price">
+        {{ product.name }}
+      </li>
+    </ng-container>
+  </ul>
+</div>
+<div>
+  <h3>Autres produits</h3>
+  <ul>
+    <ng-container *ngFor="let product of products">
+      <li *ngIf="product.price && !product.promo">
+        {{ product.name }}
+      </li>
+    </ng-container>
+  </ul>
+</div>
