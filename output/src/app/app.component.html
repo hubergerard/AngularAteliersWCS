@@ -1,0 +1,13 @@
+<app-button
+  *ngFor="let buttonName of buttonNames"
+  [name]="buttonName"
+  (buttonHasBeenClicked)="receiveButtonName($event)"
+></app-button>
+
+<p *ngFor="let buttonClicked of buttonsClicked">
+  {{ buttonClicked }} a été cliqué (au moins une fois).
+</p>
+
+<p *ngIf="buttonsClicked.length === buttonNames.length">
+  TOUS LES BOUTONS ONT ETE CLIQUES
+</p>
