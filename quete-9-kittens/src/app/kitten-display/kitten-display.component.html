@@ -1,0 +1,13 @@
+<div class="card">
+  <img
+    [src]="kitten.imgUrl"
+    alt="Chaton"
+    (mouseenter)="displayDetails = true"
+    (mouseleave)="displayDetails = false"
+  />
+  <div *ngIf="displayDetails">
+    <h3>{{ kitten.name }}</h3>
+    <p>{{ kitten.birthday | date: 'dd/MM/yyyy'}} - {{ kitten.race }}</p>
+  </div>
+  <button *ngIf="displayAdoptButton" (click)="adoptKitten()">Adopter le chat</button>
+</div>

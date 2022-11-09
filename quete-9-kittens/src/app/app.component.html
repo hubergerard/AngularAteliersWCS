@@ -1,0 +1,3 @@
+<app-kitten-list [kittens]="kittens" (adopt)="addKittenToAdoptedList($event)"></app-kitten-list>
+<app-kitten-form (create)="addKittenToList($event)"></app-kitten-form>
+<app-user-kitten [kittens]="adoptedKittens"></app-user-kitten>

@@ -1,0 +1,11 @@
+<div>
+  <h2>Liste des chats à adopter</h2>
+  <div class="container">
+    <app-kitten-display
+      *ngFor="let kitten of kittens"
+      [kitten]="kitten"
+      [displayAdoptButton]="true"
+      (adopt)="adoptKitten($event)"
+    ></app-kitten-display>
+  </div>
+</div>

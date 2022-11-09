@@ -1,0 +1,20 @@
+<h2>Ajouter un chat à adopter</h2>
+<form (ngSubmit)="createKitten()">
+  <div>
+    <label for="name">Name :</label>
+    <input type="text" id="name" name="name" [(ngModel)]="kittenForm.name"/>
+  </div>
+  <div>
+    <label for="race">Race :</label>
+    <input type="text" id="race" name="race" [(ngModel)]="kittenForm.race"/>
+  </div>
+  <div>
+    <label for="birthday">Birthday :</label>
+    <input type="date" id="birthday" name="birthday" [(ngModel)]="kittenForm.birthday"/>
+  </div>
+  <div>
+    <label for="imgUrl">Image URL :</label>
+    <input type="text" id="imgUrl" name="imgUrl" [(ngModel)]="kittenForm.imgUrl"/>
+  </div>
+  <input type="submit" value="Créer la fiche du chat" />
+</form>
