@@ -36,7 +36,6 @@ public class KittenController {
     //DAMIEN GET BY ID PAR ICIIIIIII
 
 
-
     //****************
     //LISA CREATE KITTEN PAR LAAAAAAAA
     @PostMapping
@@ -45,5 +44,5 @@ public class KittenController {
     }
 
     // LISA UPDATE KITTEN PAR ICIIIIIII
-    
+
 }
