@@ -29,4 +29,13 @@ public class KittenController {
     public void deleteKittenById(@PathVariable Integer id) {
         this.kittenRepository.deleteById(id);
     }
+    //adopt, getbyid, update, create
+
+    //DAMIEN GET BY ID PAR ICIIIIIII
+    
+
+
+    //****************
+    //LISA CREATE KITTEN PAR LAAAAAAAA
+    
 }
